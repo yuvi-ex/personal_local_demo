@@ -89,4 +89,5 @@ point worth highlighting when explaining why this approach matters.
 | `refresh-table.sh` | Safely truncates and reloads a dashboard's table without breaking its name |
 | `ml/train_model.py` | Trains the churn model (RandomForestClassifier on tenure, MonthlyCharges, Contract) |
 | `ml/churn_model.pkl` | The trained model artifact, uploaded into Exasol's BucketFS for the UDF to load |
-| `ml/WA_Fn-UseC_-Telco-Customer-Churn.csv` | The source telecom customer dataset (~7,000 rows) |
+| `ml/WA_Fn-UseC_-Telco-Customer-Churn.csv` | The source telecom customer dataset (~7,000 rows) — kept alongside `train_model.py` since the script loads it from this relative path |
+| `data/` | Source CSVs for the other 4 dashboards: ETF SIP Advisor, Nifty Wealth Advisor (5 index files), Student Performance, Employee Insights — load these into their exact `STARTER_KIT` table names per `RUNBOOK.md` |

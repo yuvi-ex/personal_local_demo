@@ -1,0 +1,8 @@
+{
+  "queries/business/summary.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0},
+  "queries/business/category_performance.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0},
+  "queries/business/top_liquid.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0},
+  "queries/business/top_movers.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0},
+  "queries/business/tracking_quality.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0},
+  "queries/business/recommendations.sql": {"category_all": 1, "category": ["Gold"], "liquid_only": 0}
+}

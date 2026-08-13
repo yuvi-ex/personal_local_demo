@@ -1,0 +1,14 @@
+{
+  "name": "tpch-sales-insights",
+  "title": "Sales Insights",
+  "route": "/apps/tpch-sales-insights",
+  "description": "Plain-language sales performance dashboard built from the TPC-H order data \u2014 revenue, orders, and top markets, all in currency terms.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

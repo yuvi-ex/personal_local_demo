@@ -1,0 +1,14 @@
+WITH FILTERED AS (
+  SELECT *
+  FROM "STARTER_KIT"."EMPLOYEES"
+  WHERE ({department_all!d} = 1 OR "department" IN ({department!s}))
+    AND ({active_only!d} = 0 OR "is_active" = TRUE)
+)
+SELECT
+    COUNT(*) AS "EMP_COUNT",
+    (SELECT COUNT(*) FROM "STARTER_KIT"."EMPLOYEES") AS "TOTAL_EMPS",
+    SUM(CASE WHEN "is_active" THEN 1 ELSE 0 END) AS "ACTIVE_COUNT",
+    COUNT(DISTINCT "department") AS "DEPT_COUNT",
+    CAST(AVG("salary") AS DOUBLE) AS "AVG_SALARY",
+    CAST(AVG(DAYS_BETWEEN(CURRENT_DATE, "hire_date")) / 365.25 AS DOUBLE) AS "AVG_TENURE_YEARS"
+FROM FILTERED

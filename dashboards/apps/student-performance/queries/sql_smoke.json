@@ -1,0 +1,9 @@
+{
+  "queries/business/summary.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/grade_distribution.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/scores_by_department.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/score_components.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/attendance_band.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/study_hours_band.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]},
+  "queries/business/income_level.sql": {"department_all": 1, "department": ["Engineering"], "gender_all": 1, "gender": ["Male"], "income_all": 1, "income": ["Low"], "extracurricular_all": 1, "extracurricular": ["Yes"]}
+}

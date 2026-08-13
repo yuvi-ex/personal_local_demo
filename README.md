@@ -1,5 +1,9 @@
 # Churn Prediction Demo — How We Built It, Step by Step
 
+**New to this repo?** This page explains the *what* and *why*. For the actual commands
+to go from a fresh clone to the whole thing running, see
+[GETTING_STARTED.md](GETTING_STARTED.md).
+
 The goal was to show that Exasol can do more than store and query data. It can run
 machine learning inside the database itself, connect to AI tools directly, and power a
 live dashboard — all from a setup that runs entirely on a laptop. Here is how we put it
@@ -89,5 +93,9 @@ point worth highlighting when explaining why this approach matters.
 | `refresh-table.sh` | Safely truncates and reloads a dashboard's table without breaking its name |
 | `ml/train_model.py` | Trains the churn model (RandomForestClassifier on tenure, MonthlyCharges, Contract) |
 | `ml/churn_model.pkl` | The trained model artifact, uploaded into Exasol's BucketFS for the UDF to load |
+| `ml/predict_churn.sql` | The UDF definition that scores a customer from inside Exasol |
+| `ml/build_churn_scores.sql` | Scores every customer and materializes `STARTER_KIT.CHURN_SCORES` |
 | `ml/WA_Fn-UseC_-Telco-Customer-Churn.csv` | The source telecom customer dataset (~7,000 rows) — kept alongside `train_model.py` since the script loads it from this relative path |
 | `data/` | Source CSVs for the other 4 dashboards: ETF SIP Advisor, Nifty Wealth Advisor (5 index files), Student Performance, Employee Insights — load these into their exact `STARTER_KIT` table names per `RUNBOOK.md` |
+| `dashboards/apps/` | Full source (app.py, SQL, manifest) for all 5 hosted dash-server dashboards — the only backup of this code, since dash-server's own internal GitOps repo has no remote |
+| `dashboards/profiles/exasol/starter-kit.json` | The Exasol connection profile every dashboard references (no secret inside — just a pointer to a local credential file) |

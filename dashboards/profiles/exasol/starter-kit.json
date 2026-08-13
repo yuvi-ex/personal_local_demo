@@ -1,0 +1,18 @@
+{
+  "name": "starter-kit",
+  "backend": "onprem",
+  "deployment_mode": "local_direct",
+  "credential_mode": "password",
+  "user": "mcp_readonly",
+  "dsn": "127.0.0.1:8563",
+  "description": "Local Exasol profile starter-kit (self-signed cert; dedicated secret, not shared EXA_PASSWORD env var).",
+  "tls_verify": false,
+  "secret_ref": {
+    "provider": "local_file",
+    "key": "starter-kit"
+  },
+  "query_defaults": {
+    "statement_timeout_seconds": 30,
+    "row_limit": 50000
+  }
+}

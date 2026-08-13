@@ -1,0 +1,14 @@
+{
+  "name": "churn-insights",
+  "title": "Churn Insights",
+  "route": "/apps/churn-insights",
+  "description": "Predicted churn risk for telecom customers, scored by the predict_churn UDF and materialized in STARTER_KIT.CHURN_SCORES.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+WITH FILTERED AS (
+  SELECT *
+  FROM "STARTER_KIT"."CHURN_SCORES"
+  WHERE ({contract_all!d} = 1 OR "Contract" IN ({contract!s}))
+    AND ({high_risk_only!d} = 0 OR "CHURN_PROBABILITY" >= 0.5)
+)
+SELECT "Contract" AS "LABEL", 'Predicted' AS "CATEGORY", CAST(AVG("CHURN_PROBABILITY") * 100 AS DOUBLE) AS "VALUE"
+FROM FILTERED GROUP BY "Contract"
+UNION ALL
+SELECT "Contract" AS "LABEL", 'Actual' AS "CATEGORY", CAST(100.0 * SUM(CASE WHEN "Churn" = 'Yes' THEN 1 ELSE 0 END) / COUNT(*) AS DOUBLE) AS "VALUE"
+FROM FILTERED GROUP BY "Contract"
+ORDER BY "LABEL"

@@ -1,0 +1,37 @@
+{
+  "queries/business/summary.sql": {
+    "contract_all": 1,
+    "contract": [
+      "Month-to-month"
+    ],
+    "high_risk_only": 0
+  },
+  "queries/business/risk_by_contract.sql": {
+    "contract_all": 1,
+    "contract": [
+      "Month-to-month"
+    ],
+    "high_risk_only": 0
+  },
+  "queries/business/count_by_risk_band.sql": {
+    "contract_all": 1,
+    "contract": [
+      "Month-to-month"
+    ],
+    "high_risk_only": 0
+  },
+  "queries/business/predicted_vs_actual_by_contract.sql": {
+    "contract_all": 1,
+    "contract": [
+      "Month-to-month"
+    ],
+    "high_risk_only": 0
+  },
+  "queries/business/top_risk_customers.sql": {
+    "contract_all": 1,
+    "contract": [
+      "Month-to-month"
+    ],
+    "high_risk_only": 0
+  }
+}

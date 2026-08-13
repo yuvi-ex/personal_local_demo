@@ -1,0 +1,4 @@
+{
+  "queries/business/summary.sql": {"segment_all": 1, "segment": ["Nifty 50"]},
+  "queries/business/constituents.sql": {"segment_all": 1, "segment": ["Nifty 50"]}
+}

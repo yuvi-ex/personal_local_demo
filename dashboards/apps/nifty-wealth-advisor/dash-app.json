@@ -1,0 +1,14 @@
+{
+  "name": "nifty-wealth-advisor",
+  "title": "Nifty Wealth Advisor",
+  "route": "/apps/nifty-wealth-advisor",
+  "description": "Plain-language investment insights across Nifty 50, Bank, Financial Services, Midcap Select and Next 50 \u2014 see what your money could have grown to.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

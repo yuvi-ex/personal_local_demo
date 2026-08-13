@@ -1,0 +1,14 @@
+{
+  "name": "student-performance",
+  "title": "Student Performance",
+  "route": "/apps/student-performance",
+  "description": "Filterable student performance analytics: grade distribution, subject/department scores, assessment breakdown, attendance/study-hours/income insights, and summary KPIs.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

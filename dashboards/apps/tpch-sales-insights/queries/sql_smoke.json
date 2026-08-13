@@ -1,0 +1,6 @@
+{
+  "queries/business/summary.sql": {"region_all": 1, "region": ["ASIA"], "segment_all": 1, "segment": ["BUILDING"], "status_all": 1, "status": ["O"], "year_min": 1992, "year_max": 1998},
+  "queries/business/year_trend.sql": {"region_all": 1, "region": ["ASIA"], "segment_all": 1, "segment": ["BUILDING"], "status_all": 1, "status": ["O"], "year_min": 1992, "year_max": 1998},
+  "queries/business/breakdowns.sql": {"region_all": 1, "region": ["ASIA"], "segment_all": 1, "segment": ["BUILDING"], "status_all": 1, "status": ["O"], "year_min": 1992, "year_max": 1998},
+  "queries/business/country_revenue.sql": {"region_all": 1, "region": ["ASIA"], "segment_all": 1, "segment": ["BUILDING"], "status_all": 1, "status": ["O"], "year_min": 1992, "year_max": 1998}
+}

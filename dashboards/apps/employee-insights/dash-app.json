@@ -1,0 +1,14 @@
+{
+  "name": "employee-insights",
+  "title": "Employee Insights",
+  "route": "/apps/employee-insights",
+  "description": "Headcount, department, salary and hiring insights from STARTER_KIT.EMPLOYEES.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

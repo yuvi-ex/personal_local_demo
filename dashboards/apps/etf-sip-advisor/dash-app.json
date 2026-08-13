@@ -1,0 +1,14 @@
+{
+  "name": "etf-sip-advisor",
+  "title": "ETF SIP Advisor",
+  "route": "/apps/etf-sip-advisor",
+  "description": "Wealth-advisor style insights on NSE-listed ETFs: category performance, liquidity, NAV tracking quality, and a suggested SIP allocation.",
+  "template": "exasol-analytics",
+  "data_sources": {
+    "primary": {
+      "kind": "exasol",
+      "profile": "starter-kit",
+      "auth_mode": "local_direct"
+    }
+  }
+}

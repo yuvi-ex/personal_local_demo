@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__exasol__execute_exasol_query",
+      "mcp__exasol__describe_exasol_table_or_view",
+      "mcp__dash-server__app_read_file",
+      "mcp__dash-server__app_run_healthcheck",
+      "mcp__dash-server__app_validate",
+      "mcp__exasol__find_exasol_tables_and_views",
+      "mcp__exasol__list_exasol_tables_and_views",
+      "Bash(exakit status)",
+      "Bash(source venv/bin/activate)",
+      "Bash(exakit mcp-doctor)",
+      "mcp__dash-server__exasol_profile_validate",
+      "mcp__dash-server__app_collect_diagnostics",
+      "mcp__dash-server__app_sessions_list",
+      "mcp__dash-server__app_tail_logs",
+      "mcp__dash-server__app_inspect_traceback",
+      "mcp__exasol__summarize_exasol_table",
+      "Bash(exakit info)",
+      "mcp__exasol__list_exasol_schemas",
+      "mcp__dash-server__exasol_profiles_list",
+      "Bash(pip3 show *)"
+    ]
+  }
+}

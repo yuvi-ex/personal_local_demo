@@ -1,0 +1,4 @@
+ml/churn_demo_venv/
+__pycache__/
+*.pyc
+.DS_Store
